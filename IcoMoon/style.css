@@ -1,0 +1,1314 @@
+@font-face {
+	font-family: 'kotaserang';
+	src:url('fonts/kotaserang.eot');
+	src:url('fonts/kotaserang.eot?#iefix') format('embedded-opentype'),
+		url('fonts/kotaserang.woff') format('woff'),
+		url('fonts/kotaserang.ttf') format('truetype'),
+		url('fonts/kotaserang.svg#kotaserang') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'kotaserang';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-kotaserang"] {
+*/
+.icon-kotaserangpodcast, .icon-kotaserangcompass, .icon-kotaserangdesignmodo-location, .icon-kotaserangpin-alt, .icon-kotaserangpin, .icon-kotaserangcompass-2, .icon-kotaseranglocation, .icon-kotaserangcompass-3, .icon-kotaserangpin-2, .icon-kotaserangmap-pin-stroke, .icon-kotaserangcamera, .icon-kotaserangpictures, .icon-kotaserangcamera-2, .icon-kotaserangimages, .icon-kotaserangposition, .icon-kotaserangcamera-3, .icon-kotaserangfilm, .icon-kotaserangmovie, .icon-kotaserangcalendar, .icon-kotaserangtwitter, .icon-kotaserangtwitter-2, .icon-kotaserangtwitter-3, .icon-kotaserangfacebook, .icon-kotaserangfacebook-2, .icon-kotaserangfacebook-3, .icon-kotaserangyoutube, .icon-kotaserangyoutube-2, .icon-kotaserangsite-map, .icon-kotaserangsite-map-2, .icon-kotaserangenvelope, .icon-kotaserangenvelope-2, .icon-kotaserangenvelope-3, .icon-kotaserangenvelope-4, .icon-kotaserangmail, .icon-kotaserangenvelope-5, .icon-kotaserangat, .icon-kotaserangmobile, .icon-kotaserangmobile-2, .icon-kotaserangmobile-3, .icon-kotaserangphone, .icon-kotaserangmobile-4, .icon-kotaserangdirection, .icon-kotaserangaddress-book, .icon-kotaserangusers, .icon-kotaseranggoogle, .icon-kotaseranggoogle-plus, .icon-kotaseranggoogle-plus-2, .icon-kotaseranggoogle-plus-3, .icon-kotaseranggoogle-plus-4, .icon-kotaseranggoogle-drive, .icon-kotaserangpinterest, .icon-kotaserangpinterest-2, .icon-kotaserangupload, .icon-kotaserangdownload, .icon-kotaseranghash, .icon-kotaserangnumbered-list, .icon-kotaserangnumber, .icon-kotaserangnumber-2, .icon-kotaserangnumber-3, .icon-kotaserangnumber-4, .icon-kotaserangnumber-5, .icon-kotaserangnumber-6, .icon-kotaserangnumber-7, .icon-kotaserangnumber-8, .icon-kotaserangnumber-9, .icon-kotaserangnumber-10, .icon-kotaserangnumber-11, .icon-kotaserangnumber-12, .icon-kotaserangnumber-13, .icon-kotaserangnumber-14, .icon-kotaserangnumber-15, .icon-kotaserangnumber-16, .icon-kotaserangnumber-17, .icon-kotaserangnumber-18, .icon-kotaserangnumber-19, .icon-kotaserangnumber-20, .icon-kotaserangmale, .icon-kotaserangfemale, .icon-kotaserangsunrise, .icon-kotaserangsun, .icon-kotaserangmoon, .icon-kotaserangsun-2, .icon-kotaserangwindy, .icon-kotaserangwind, .icon-kotaserangcloudy, .icon-kotaserangcloud, .icon-kotaserangweather, .icon-kotaserangwindy-2, .icon-kotaserangwindy-3, .icon-kotaserangrainy, .icon-kotaserangcloudy-2, .icon-kotaserangsun-3, .icon-kotaseranglightning, .icon-kotaserangmoon-2, .icon-kotaserangcloud-2, .icon-kotaserangcloudy-3, .icon-kotaserangweather-2, .icon-kotaserangrainy-2, .icon-kotaserangwindy-4, .icon-kotaserangwindy-5, .icon-kotaserangfork-and-spoon, .icon-kotaserangtwitter-old, .icon-kotaserangfeed, .icon-kotaserangchat, .icon-kotaseranguser, .icon-kotaserangradio, .icon-kotaserangbullhorn, .icon-kotaserangnewspaper, .icon-kotaserangprofile, .icon-kotaserangcar, .icon-kotaserangcart, .icon-kotaserangbasket, .icon-kotaserangbike, .icon-kotaserangbike-2, .icon-kotaseranguser-2, .icon-kotaseranguser-3, .icon-kotaseranguser-4, .icon-kotaserangusers-2, .icon-kotaseranguser-5, .icon-kotaseranguser-6, .icon-kotaseranghome, .icon-kotaserangpictures-2, .icon-kotaserangtumblr, .icon-kotaserangtumblr-2, .icon-kotaserangwordpress, .icon-kotaserangwordpress-2, .icon-kotaserangfile-word, .icon-kotaseranghome-2, .icon-kotaserangoffice, .icon-kotaseranglibrary, .icon-kotaserangbubbles, .icon-kotaserangbubbles-2, .icon-kotaserangchronometer, .icon-kotaserangtime, .icon-kotaserangnew-tab, .icon-kotaserangheadphones, .icon-kotaserangmusic, .icon-kotaserangheadphones-2, .icon-kotaserangbus, .icon-kotaserangequalizer, .icon-kotaserangadd, .icon-kotaserangheart, .icon-kotaserangsoccer, .icon-kotaserangbaseball, .icon-kotaserangmoney-bag, .icon-kotaserangpig, .icon-kotaserangjustice, .icon-kotaserangeye-blocked, .icon-kotaserangdrink, .icon-kotaserangdrink-2, .icon-kotaserangcoffee, .icon-kotaserangmug, .icon-kotaseranggamepad, .icon-kotaseranggamepad-2, .icon-kotaserangtrashcan, .icon-kotaserangrefrigerator, .icon-kotaserangtools, .icon-kotaserangbook, .icon-kotaserangbook-2, .icon-kotaserangminus, .icon-kotaserangminus-2, .icon-kotaserangcancel, .icon-kotaserangforward, .icon-kotaserangreply, .icon-kotaserangrotate, .icon-kotaserangminus-3, .icon-kotaserangreddit, .icon-kotaserangflag, .icon-kotaserangcode, .icon-kotaserangcode-2, .icon-kotaserangfile-xml, .icon-kotaserangfile-css, .icon-kotaserangquote, .icon-kotaserangquote-2, .icon-kotaserangquote-3, .icon-kotaserangquotes-left, .icon-kotaserangleft-quote, .icon-kotaserangright-quote, .icon-kotaserangshit, .icon-kotaseranginjection, .icon-kotaserangstats, .icon-kotaseranginfo, .icon-kotaseranginfo-2, .icon-kotaseranginfo-3, .icon-kotaserangchrome, .icon-kotaserangfirefox, .icon-kotaserangIE, .icon-kotaserangopera, .icon-kotaserangsafari, .icon-kotaseranginstagram, .icon-kotaserangarchive, .icon-kotaserangbrush, .icon-kotaserangundo, .icon-kotaserangredo, .icon-kotaserangforward-2, .icon-kotaserangreply-2, .icon-kotaserangarrow-up-left, .icon-kotaserangarrow-up, .icon-kotaserangarrow-up-right, .icon-kotaserangarrow-right, .icon-kotaserangarrow-down-right, .icon-kotaserangarrow-down, .icon-kotaserangarrow-down-left, .icon-kotaserangarrow-left, .icon-kotaserangarrow-up-left-2, .icon-kotaserangarrow-up-2, .icon-kotaserangarrow-up-right-2, .icon-kotaserangarrow-right-2, .icon-kotaserangarrow-down-right-2, .icon-kotaserangarrow-down-2, .icon-kotaserangarrow-down-left-2, .icon-kotaserangarrow-left-2, .icon-kotaserangloop, .icon-kotaserangpacman, .icon-kotaserangchart, .icon-kotaserangchart-2, .icon-kotaserangdollar, .icon-kotaserangpaypal, .icon-kotaserangpaypal-2, .icon-kotaserangpaypal-3, .icon-kotaserangbarcode, .icon-kotaserangsale, .icon-kotaserangedit, .icon-kotaserangsafe, .icon-kotaserangsanjit-saha-afro, .icon-kotaserangmicrophone, .icon-kotaserangalarm-clock, .icon-kotaserangopen, .icon-kotaseranggraduate, .icon-kotaseranglab, .icon-kotaserangtie, .icon-kotaserangwashing-machine, .icon-kotaserangeight-ball, .icon-kotaserangbowling, .icon-kotaserangfootball, .icon-kotaserangmagnifier, .icon-kotaserangspace-invaders, .icon-kotaserangbomb, .icon-kotaserangcomments, .icon-kotaserangticket, .icon-kotaserangerror, .icon-kotaserangchecked, .icon-kotaserangusb, .icon-kotaserangclipboard, .icon-kotaserangian-yates-y-fronts, .icon-kotaserangjohana-barretto-kitty, .icon-kotaserangjohana-barretto-kitty-stripy, .icon-kotaserangderek-mui-tie, .icon-kotaserangchristina-pedersen-walkman, .icon-kotaserangchris-spittles-health, .icon-kotaserangderek-mui-invader, .icon-kotaserangmatt-hakes-spectacles, .icon-kotaserangmatt-hakes-moustache, .icon-kotaserangian-yates-creative-commons, .icon-kotaseranganton-boshoff-headset, .icon-kotaserangian-yates-mr-whippy, .icon-kotaserangcole-townsend-pencil, .icon-kotaserangjeffrey-herrera-beer-mug, .icon-kotaserangian-yates-porridge, .icon-kotaserangthumbs-up, .icon-kotaserangthumbs-up-2, .icon-kotaseranghappy, .icon-kotaserangcool, .icon-kotaseranggrin, .icon-kotaserangwink, .icon-kotaserangsad, .icon-kotaserangtongue, .icon-kotaserangsmiley, .icon-kotaserangheart-2, .icon-kotaserangangry, .icon-kotaserangevil, .icon-kotaserangshocked, .icon-kotaserangconfused, .icon-kotaserangneutral, .icon-kotaserangwondering, .icon-kotaserangomega, .icon-kotaserangsigma, .icon-kotaserangvimeo, .icon-kotaserangvimeo2, .icon-kotaserangpicassa, .icon-kotaserangpicassa-2, .icon-kotaserangdribbble, .icon-kotaserangdribbble-2, .icon-kotaserangblogger, .icon-kotaserangblogger-2, .icon-kotaserangyahoo, .icon-kotaserangandroid, .icon-kotaserangwindows, .icon-kotaserangwindows8, .icon-kotaseranglinkedin, .icon-kotaserangdelicious, .icon-kotaserangstumbleupon, .icon-kotaserangstumbleupon-2, .icon-kotaserangpencil, .icon-kotaserangdribbble-3, .icon-kotaserangstumbleupon-3, .icon-kotaserangbreakable, .icon-kotaserangbatman, .icon-kotaserangironman, .icon-kotaserangdarthvader, .icon-kotaserangspiderman, .icon-kotaserangspider, .icon-kotaserangpunisher, .icon-kotaserangspawn, .icon-kotaserangspaceinvaders, .icon-kotaserangpokemon, .icon-kotaserangrobocop, .icon-kotaserangjason, .icon-kotaserangvalue, .icon-kotaserangphp, .icon-kotaserangfourohfour, .icon-kotaserangcplusplus, .icon-kotaserangcsharp, .icon-kotaserangsquarebrackets, .icon-kotaserangbraces, .icon-kotaserangchevrons, .icon-kotaserangphotoshop, .icon-kotaserangillustrator, .icon-kotaserangflash, .icon-kotaserangdreamweaver, .icon-kotaserangcreativecommons, .icon-kotaserangairplane, .icon-kotaserangshipping, .icon-kotaserangbus-2, .icon-kotaserangfreeway, .icon-kotaserangroad, .icon-kotaserangforklift, .icon-kotaserangpodium, .icon-kotaserangmedalgold, .icon-kotaserangmedalsilver, .icon-kotaserangmedalbronze, .icon-kotaserangsum, .icon-kotaserangroot, .icon-kotaserangdollar-2, .icon-kotaserangpercent, .icon-kotaserangasterisk, .icon-kotaserangplus, .icon-kotaserangcopyright, .icon-kotaserangsettings3, .icon-kotaserangchat-2, .icon-kotaserangtumblr-3, .icon-kotaseranggoogleplus, .icon-kotaseranglinkedin-2, .icon-kotaserangblogger-3, .icon-kotaserangvimeo-2, .icon-kotaserangpath, .icon-kotaserangtwitter-4, .icon-kotaserangyahoo-2, .icon-kotaserangdelicious-2, .icon-kotaserangfacebook2, .icon-kotaserangtethering, .icon-kotaserangrawaccesslogs, .icon-kotaserangdieone, .icon-kotaserangdietwo, .icon-kotaserangdiethree, .icon-kotaserangdiefour, .icon-kotaserangdiefive, .icon-kotaserangdiesix, .icon-kotaseranglighthouse, .icon-kotaserangdiode, .icon-kotaserangcapacitator, .icon-kotaserangdcsource, .icon-kotaserangacsource, .icon-kotaserangresistor, .icon-kotaserangsoup, .icon-kotaserangfoodtray, .icon-kotaserangangrybirds, .icon-kotaserangvisa, .icon-kotaserangvendetta, .icon-kotaserangisland, .icon-kotaserangapple, .icon-kotaserangfoursquare, .icon-kotaserangroute, .icon-kotaserangspeed, .icon-kotaserangsharethree, .icon-kotaserangcaptainamerica, .icon-kotaserangsuperman, .icon-kotaserangfishbone, .icon-kotaserangfirefox-2, .icon-kotaserangintersection, .icon-kotaserangtie-2, .icon-kotaserangminus-4, .icon-kotaserangmultiply, .icon-kotaserangdivide, .icon-kotaserangblackberry, .icon-kotaserangaperture, .icon-kotaserangrestaurantmenu, .icon-kotaserangchocolate, .icon-kotaserangbirthday, .icon-kotaserangraceflag, .icon-kotaserangaries, .icon-kotaserangtaurus, .icon-kotaseranggemini, .icon-kotaserangcancer, .icon-kotaserangleo, .icon-kotaserangvirgo, .icon-kotaseranglibra, .icon-kotaserangscorpio, .icon-kotaserangsagitarius, .icon-kotaserangcapricorn, .icon-kotaserangaquarius, .icon-kotaserangpisces, .icon-kotaserangparentheses, .icon-kotaseranghelicopter, .icon-kotaseranghtml, .icon-kotaserangwordpress-3, .icon-kotaseranggithub, .icon-kotaserangandroid-2, .icon-kotaserangcomment, .icon-kotaserangfacebook-4, .icon-kotaserangyoutube-3, .icon-kotaseranginstagram-2, .icon-kotaserangreddit-2, .icon-kotaserangmyspace, .icon-kotaseranggmail, .icon-kotaserangchrome-2, .icon-kotaserangrss, .icon-kotaserangevernote, .icon-kotaserangplay2, .icon-kotaserangmusic-2, .icon-kotaserangvoice, .icon-kotaserangmusic2, .icon-kotaserangplace2, .icon-kotaserangqrcode, .icon-kotaserangpolice {
+	font-family: 'kotaserang';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-kotaserangpodcast:before {
+	content: "\e000";
+}
+.icon-kotaserangcompass:before {
+	content: "\e001";
+}
+.icon-kotaserangdesignmodo-location:before {
+	content: "\e002";
+}
+.icon-kotaserangpin-alt:before {
+	content: "\e003";
+}
+.icon-kotaserangpin:before {
+	content: "\e004";
+}
+.icon-kotaserangcompass-2:before {
+	content: "\e005";
+}
+.icon-kotaseranglocation:before {
+	content: "\e006";
+}
+.icon-kotaserangcompass-3:before {
+	content: "\e007";
+}
+.icon-kotaserangpin-2:before {
+	content: "\e008";
+}
+.icon-kotaserangmap-pin-stroke:before {
+	content: "\e009";
+}
+.icon-kotaserangcamera:before {
+	content: "\e00a";
+}
+.icon-kotaserangpictures:before {
+	content: "\e00b";
+}
+.icon-kotaserangcamera-2:before {
+	content: "\e00c";
+}
+.icon-kotaserangimages:before {
+	content: "\e00d";
+}
+.icon-kotaserangposition:before {
+	content: "\e00e";
+}
+.icon-kotaserangcamera-3:before {
+	content: "\e00f";
+}
+.icon-kotaserangfilm:before {
+	content: "\e010";
+}
+.icon-kotaserangmovie:before {
+	content: "\e011";
+}
+.icon-kotaserangcalendar:before {
+	content: "\e012";
+}
+.icon-kotaserangtwitter:before {
+	content: "\e013";
+}
+.icon-kotaserangtwitter-2:before {
+	content: "\e014";
+}
+.icon-kotaserangtwitter-3:before {
+	content: "\e015";
+}
+.icon-kotaserangfacebook:before {
+	content: "\e016";
+}
+.icon-kotaserangfacebook-2:before {
+	content: "\e017";
+}
+.icon-kotaserangfacebook-3:before {
+	content: "\e018";
+}
+.icon-kotaserangyoutube:before {
+	content: "\e019";
+}
+.icon-kotaserangyoutube-2:before {
+	content: "\e01a";
+}
+.icon-kotaserangsite-map:before {
+	content: "\e01b";
+}
+.icon-kotaserangsite-map-2:before {
+	content: "\e01c";
+}
+.icon-kotaserangenvelope:before {
+	content: "\e01d";
+}
+.icon-kotaserangenvelope-2:before {
+	content: "\e01e";
+}
+.icon-kotaserangenvelope-3:before {
+	content: "\e01f";
+}
+.icon-kotaserangenvelope-4:before {
+	content: "\e020";
+}
+.icon-kotaserangmail:before {
+	content: "\e021";
+}
+.icon-kotaserangenvelope-5:before {
+	content: "\e022";
+}
+.icon-kotaserangat:before {
+	content: "\e023";
+}
+.icon-kotaserangmobile:before {
+	content: "\e024";
+}
+.icon-kotaserangmobile-2:before {
+	content: "\e025";
+}
+.icon-kotaserangmobile-3:before {
+	content: "\e026";
+}
+.icon-kotaserangphone:before {
+	content: "\e027";
+}
+.icon-kotaserangmobile-4:before {
+	content: "\e028";
+}
+.icon-kotaserangdirection:before {
+	content: "\e029";
+}
+.icon-kotaserangaddress-book:before {
+	content: "\e02a";
+}
+.icon-kotaserangusers:before {
+	content: "\e02b";
+}
+.icon-kotaseranggoogle:before {
+	content: "\e02c";
+}
+.icon-kotaseranggoogle-plus:before {
+	content: "\e02d";
+}
+.icon-kotaseranggoogle-plus-2:before {
+	content: "\e02e";
+}
+.icon-kotaseranggoogle-plus-3:before {
+	content: "\e02f";
+}
+.icon-kotaseranggoogle-plus-4:before {
+	content: "\e030";
+}
+.icon-kotaseranggoogle-drive:before {
+	content: "\e031";
+}
+.icon-kotaserangpinterest:before {
+	content: "\e032";
+}
+.icon-kotaserangpinterest-2:before {
+	content: "\e033";
+}
+.icon-kotaserangupload:before {
+	content: "\e034";
+}
+.icon-kotaserangdownload:before {
+	content: "\e035";
+}
+.icon-kotaseranghash:before {
+	content: "\e036";
+}
+.icon-kotaserangnumbered-list:before {
+	content: "\e037";
+}
+.icon-kotaserangnumber:before {
+	content: "\e038";
+}
+.icon-kotaserangnumber-2:before {
+	content: "\e039";
+}
+.icon-kotaserangnumber-3:before {
+	content: "\e03a";
+}
+.icon-kotaserangnumber-4:before {
+	content: "\e03b";
+}
+.icon-kotaserangnumber-5:before {
+	content: "\e03c";
+}
+.icon-kotaserangnumber-6:before {
+	content: "\e03d";
+}
+.icon-kotaserangnumber-7:before {
+	content: "\e03e";
+}
+.icon-kotaserangnumber-8:before {
+	content: "\e03f";
+}
+.icon-kotaserangnumber-9:before {
+	content: "\e040";
+}
+.icon-kotaserangnumber-10:before {
+	content: "\e041";
+}
+.icon-kotaserangnumber-11:before {
+	content: "\e042";
+}
+.icon-kotaserangnumber-12:before {
+	content: "\e043";
+}
+.icon-kotaserangnumber-13:before {
+	content: "\e044";
+}
+.icon-kotaserangnumber-14:before {
+	content: "\e045";
+}
+.icon-kotaserangnumber-15:before {
+	content: "\e046";
+}
+.icon-kotaserangnumber-16:before {
+	content: "\e047";
+}
+.icon-kotaserangnumber-17:before {
+	content: "\e048";
+}
+.icon-kotaserangnumber-18:before {
+	content: "\e049";
+}
+.icon-kotaserangnumber-19:before {
+	content: "\e04a";
+}
+.icon-kotaserangnumber-20:before {
+	content: "\e04b";
+}
+.icon-kotaserangmale:before {
+	content: "\e04c";
+}
+.icon-kotaserangfemale:before {
+	content: "\e04d";
+}
+.icon-kotaserangsunrise:before {
+	content: "\e04e";
+}
+.icon-kotaserangsun:before {
+	content: "\e04f";
+}
+.icon-kotaserangmoon:before {
+	content: "\e050";
+}
+.icon-kotaserangsun-2:before {
+	content: "\e051";
+}
+.icon-kotaserangwindy:before {
+	content: "\e052";
+}
+.icon-kotaserangwind:before {
+	content: "\e053";
+}
+.icon-kotaserangcloudy:before {
+	content: "\e055";
+}
+.icon-kotaserangcloud:before {
+	content: "\e056";
+}
+.icon-kotaserangweather:before {
+	content: "\e05b";
+}
+.icon-kotaserangwindy-2:before {
+	content: "\e05e";
+}
+.icon-kotaserangwindy-3:before {
+	content: "\e05f";
+}
+.icon-kotaserangrainy:before {
+	content: "\e060";
+}
+.icon-kotaserangcloudy-2:before {
+	content: "\e065";
+}
+.icon-kotaserangsun-3:before {
+	content: "\e068";
+}
+.icon-kotaseranglightning:before {
+	content: "\e067";
+}
+.icon-kotaserangmoon-2:before {
+	content: "\e069";
+}
+.icon-kotaserangcloud-2:before {
+	content: "\e06a";
+}
+.icon-kotaserangcloudy-3:before {
+	content: "\e06b";
+}
+.icon-kotaserangweather-2:before {
+	content: "\e054";
+}
+.icon-kotaserangrainy-2:before {
+	content: "\e057";
+}
+.icon-kotaserangwindy-4:before {
+	content: "\e058";
+}
+.icon-kotaserangwindy-5:before {
+	content: "\e059";
+}
+.icon-kotaserangfork-and-spoon:before {
+	content: "\e05a";
+}
+.icon-kotaserangtwitter-old:before {
+	content: "\e05c";
+}
+.icon-kotaserangfeed:before {
+	content: "\e05d";
+}
+.icon-kotaserangchat:before {
+	content: "\e061";
+}
+.icon-kotaseranguser:before {
+	content: "\e062";
+}
+.icon-kotaserangradio:before {
+	content: "\e063";
+}
+.icon-kotaserangbullhorn:before {
+	content: "\e064";
+}
+.icon-kotaserangnewspaper:before {
+	content: "\e066";
+}
+.icon-kotaserangprofile:before {
+	content: "\e06c";
+}
+.icon-kotaserangcar:before {
+	content: "\e06d";
+}
+.icon-kotaserangcart:before {
+	content: "\e06e";
+}
+.icon-kotaserangbasket:before {
+	content: "\e06f";
+}
+.icon-kotaserangbike:before {
+	content: "\e070";
+}
+.icon-kotaserangbike-2:before {
+	content: "\e071";
+}
+.icon-kotaseranguser-2:before {
+	content: "\e072";
+}
+.icon-kotaseranguser-3:before {
+	content: "\e073";
+}
+.icon-kotaseranguser-4:before {
+	content: "\e074";
+}
+.icon-kotaserangusers-2:before {
+	content: "\e075";
+}
+.icon-kotaseranguser-5:before {
+	content: "\e076";
+}
+.icon-kotaseranguser-6:before {
+	content: "\e077";
+}
+.icon-kotaseranghome:before {
+	content: "\e078";
+}
+.icon-kotaserangpictures-2:before {
+	content: "\e079";
+}
+.icon-kotaserangtumblr:before {
+	content: "\e07a";
+}
+.icon-kotaserangtumblr-2:before {
+	content: "\e07b";
+}
+.icon-kotaserangwordpress:before {
+	content: "\e07c";
+}
+.icon-kotaserangwordpress-2:before {
+	content: "\e07d";
+}
+.icon-kotaserangfile-word:before {
+	content: "\e07e";
+}
+.icon-kotaseranghome-2:before {
+	content: "\e07f";
+}
+.icon-kotaserangoffice:before {
+	content: "\e080";
+}
+.icon-kotaseranglibrary:before {
+	content: "\e081";
+}
+.icon-kotaserangbubbles:before {
+	content: "\e082";
+}
+.icon-kotaserangbubbles-2:before {
+	content: "\e083";
+}
+.icon-kotaserangchronometer:before {
+	content: "\e084";
+}
+.icon-kotaserangtime:before {
+	content: "\e085";
+}
+.icon-kotaserangnew-tab:before {
+	content: "\e086";
+}
+.icon-kotaserangheadphones:before {
+	content: "\e087";
+}
+.icon-kotaserangmusic:before {
+	content: "\e088";
+}
+.icon-kotaserangheadphones-2:before {
+	content: "\e089";
+}
+.icon-kotaserangbus:before {
+	content: "\e08a";
+}
+.icon-kotaserangequalizer:before {
+	content: "\e08b";
+}
+.icon-kotaserangadd:before {
+	content: "\e08c";
+}
+.icon-kotaserangheart:before {
+	content: "\e08d";
+}
+.icon-kotaserangsoccer:before {
+	content: "\e08e";
+}
+.icon-kotaserangbaseball:before {
+	content: "\e08f";
+}
+.icon-kotaserangmoney-bag:before {
+	content: "\e090";
+}
+.icon-kotaserangpig:before {
+	content: "\e091";
+}
+.icon-kotaserangjustice:before {
+	content: "\e092";
+}
+.icon-kotaserangeye-blocked:before {
+	content: "\e093";
+}
+.icon-kotaserangdrink:before {
+	content: "\e094";
+}
+.icon-kotaserangdrink-2:before {
+	content: "\e095";
+}
+.icon-kotaserangcoffee:before {
+	content: "\e096";
+}
+.icon-kotaserangmug:before {
+	content: "\e097";
+}
+.icon-kotaseranggamepad:before {
+	content: "\e098";
+}
+.icon-kotaseranggamepad-2:before {
+	content: "\e099";
+}
+.icon-kotaserangtrashcan:before {
+	content: "\e09a";
+}
+.icon-kotaserangrefrigerator:before {
+	content: "\e09b";
+}
+.icon-kotaserangtools:before {
+	content: "\e09c";
+}
+.icon-kotaserangbook:before {
+	content: "\e09d";
+}
+.icon-kotaserangbook-2:before {
+	content: "\e09e";
+}
+.icon-kotaserangminus:before {
+	content: "\e09f";
+}
+.icon-kotaserangminus-2:before {
+	content: "\e0a0";
+}
+.icon-kotaserangcancel:before {
+	content: "\e0a1";
+}
+.icon-kotaserangforward:before {
+	content: "\e0a2";
+}
+.icon-kotaserangreply:before {
+	content: "\e0a3";
+}
+.icon-kotaserangrotate:before {
+	content: "\e0a4";
+}
+.icon-kotaserangminus-3:before {
+	content: "\e0a5";
+}
+.icon-kotaserangreddit:before {
+	content: "\e0a6";
+}
+.icon-kotaserangflag:before {
+	content: "\e0a7";
+}
+.icon-kotaserangcode:before {
+	content: "\e0a8";
+}
+.icon-kotaserangcode-2:before {
+	content: "\e0a9";
+}
+.icon-kotaserangfile-xml:before {
+	content: "\e0aa";
+}
+.icon-kotaserangfile-css:before {
+	content: "\e0ab";
+}
+.icon-kotaserangquote:before {
+	content: "\e0ac";
+}
+.icon-kotaserangquote-2:before {
+	content: "\e0ad";
+}
+.icon-kotaserangquote-3:before {
+	content: "\e0ae";
+}
+.icon-kotaserangquotes-left:before {
+	content: "\e0af";
+}
+.icon-kotaserangleft-quote:before {
+	content: "\e0b0";
+}
+.icon-kotaserangright-quote:before {
+	content: "\e0b1";
+}
+.icon-kotaserangshit:before {
+	content: "\e0b2";
+}
+.icon-kotaseranginjection:before {
+	content: "\e0b3";
+}
+.icon-kotaserangstats:before {
+	content: "\e0b4";
+}
+.icon-kotaseranginfo:before {
+	content: "\e0b5";
+}
+.icon-kotaseranginfo-2:before {
+	content: "\e0b6";
+}
+.icon-kotaseranginfo-3:before {
+	content: "\e0b7";
+}
+.icon-kotaserangchrome:before {
+	content: "\e0b8";
+}
+.icon-kotaserangfirefox:before {
+	content: "\e0b9";
+}
+.icon-kotaserangIE:before {
+	content: "\e0ba";
+}
+.icon-kotaserangopera:before {
+	content: "\e0bb";
+}
+.icon-kotaserangsafari:before {
+	content: "\e0bc";
+}
+.icon-kotaseranginstagram:before {
+	content: "\e0bd";
+}
+.icon-kotaserangarchive:before {
+	content: "\e0be";
+}
+.icon-kotaserangbrush:before {
+	content: "\e0bf";
+}
+.icon-kotaserangundo:before {
+	content: "\2906";
+}
+.icon-kotaserangredo:before {
+	content: "\e0c1";
+}
+.icon-kotaserangforward-2:before {
+	content: "\e0c2";
+}
+.icon-kotaserangreply-2:before {
+	content: "\e0c3";
+}
+.icon-kotaserangarrow-up-left:before {
+	content: "\e0c4";
+}
+.icon-kotaserangarrow-up:before {
+	content: "\e0c5";
+}
+.icon-kotaserangarrow-up-right:before {
+	content: "\e0c6";
+}
+.icon-kotaserangarrow-right:before {
+	content: "\e0c7";
+}
+.icon-kotaserangarrow-down-right:before {
+	content: "\e0c8";
+}
+.icon-kotaserangarrow-down:before {
+	content: "\e0c9";
+}
+.icon-kotaserangarrow-down-left:before {
+	content: "\e0ca";
+}
+.icon-kotaserangarrow-left:before {
+	content: "\e0cb";
+}
+.icon-kotaserangarrow-up-left-2:before {
+	content: "\e0cc";
+}
+.icon-kotaserangarrow-up-2:before {
+	content: "\e0cd";
+}
+.icon-kotaserangarrow-up-right-2:before {
+	content: "\e0ce";
+}
+.icon-kotaserangarrow-right-2:before {
+	content: "\e0cf";
+}
+.icon-kotaserangarrow-down-right-2:before {
+	content: "\e0d0";
+}
+.icon-kotaserangarrow-down-2:before {
+	content: "\e0d1";
+}
+.icon-kotaserangarrow-down-left-2:before {
+	content: "\e0d2";
+}
+.icon-kotaserangarrow-left-2:before {
+	content: "\e0d3";
+}
+.icon-kotaserangloop:before {
+	content: "\e0d4";
+}
+.icon-kotaserangpacman:before {
+	content: "\e0d5";
+}
+.icon-kotaserangchart:before {
+	content: "\e0d6";
+}
+.icon-kotaserangchart-2:before {
+	content: "\e0d7";
+}
+.icon-kotaserangdollar:before {
+	content: "\e0d8";
+}
+.icon-kotaserangpaypal:before {
+	content: "\e0d9";
+}
+.icon-kotaserangpaypal-2:before {
+	content: "\e0da";
+}
+.icon-kotaserangpaypal-3:before {
+	content: "\e0db";
+}
+.icon-kotaserangbarcode:before {
+	content: "\e0dc";
+}
+.icon-kotaserangsale:before {
+	content: "\e0dd";
+}
+.icon-kotaserangedit:before {
+	content: "\e0de";
+}
+.icon-kotaserangsafe:before {
+	content: "\e0df";
+}
+.icon-kotaserangsanjit-saha-afro:before {
+	content: "\e0e0";
+}
+.icon-kotaserangmicrophone:before {
+	content: "\e0e1";
+}
+.icon-kotaserangalarm-clock:before {
+	content: "\e0e2";
+}
+.icon-kotaserangopen:before {
+	content: "\e0e3";
+}
+.icon-kotaseranggraduate:before {
+	content: "\e0e4";
+}
+.icon-kotaseranglab:before {
+	content: "\e0e5";
+}
+.icon-kotaserangtie:before {
+	content: "\e0e6";
+}
+.icon-kotaserangwashing-machine:before {
+	content: "\e0e7";
+}
+.icon-kotaserangeight-ball:before {
+	content: "\e0e8";
+}
+.icon-kotaserangbowling:before {
+	content: "\e0e9";
+}
+.icon-kotaserangfootball:before {
+	content: "\e0ea";
+}
+.icon-kotaserangmagnifier:before {
+	content: "\e0eb";
+}
+.icon-kotaserangspace-invaders:before {
+	content: "\e0ec";
+}
+.icon-kotaserangbomb:before {
+	content: "\e0ed";
+}
+.icon-kotaserangcomments:before {
+	content: "\e0ee";
+}
+.icon-kotaserangticket:before {
+	content: "\e0ef";
+}
+.icon-kotaserangerror:before {
+	content: "\e0f0";
+}
+.icon-kotaserangchecked:before {
+	content: "\e0f1";
+}
+.icon-kotaserangusb:before {
+	content: "\e0f2";
+}
+.icon-kotaserangclipboard:before {
+	content: "\e0f3";
+}
+.icon-kotaserangian-yates-y-fronts:before {
+	content: "\e0f4";
+}
+.icon-kotaserangjohana-barretto-kitty:before {
+	content: "\e0f5";
+}
+.icon-kotaserangjohana-barretto-kitty-stripy:before {
+	content: "\e0f6";
+}
+.icon-kotaserangderek-mui-tie:before {
+	content: "\e0f7";
+}
+.icon-kotaserangchristina-pedersen-walkman:before {
+	content: "\e0f8";
+}
+.icon-kotaserangchris-spittles-health:before {
+	content: "\e0f9";
+}
+.icon-kotaserangderek-mui-invader:before {
+	content: "\e0fa";
+}
+.icon-kotaserangmatt-hakes-spectacles:before {
+	content: "\e0fb";
+}
+.icon-kotaserangmatt-hakes-moustache:before {
+	content: "\e0fc";
+}
+.icon-kotaserangian-yates-creative-commons:before {
+	content: "\e0fd";
+}
+.icon-kotaseranganton-boshoff-headset:before {
+	content: "\e0fe";
+}
+.icon-kotaserangian-yates-mr-whippy:before {
+	content: "\e0ff";
+}
+.icon-kotaserangcole-townsend-pencil:before {
+	content: "\e100";
+}
+.icon-kotaserangjeffrey-herrera-beer-mug:before {
+	content: "\e101";
+}
+.icon-kotaserangian-yates-porridge:before {
+	content: "\e102";
+}
+.icon-kotaserangthumbs-up:before {
+	content: "\e103";
+}
+.icon-kotaserangthumbs-up-2:before {
+	content: "\e104";
+}
+.icon-kotaseranghappy:before {
+	content: "\e105";
+}
+.icon-kotaserangcool:before {
+	content: "\e106";
+}
+.icon-kotaseranggrin:before {
+	content: "\e107";
+}
+.icon-kotaserangwink:before {
+	content: "\e108";
+}
+.icon-kotaserangsad:before {
+	content: "\e109";
+}
+.icon-kotaserangtongue:before {
+	content: "\e10a";
+}
+.icon-kotaserangsmiley:before {
+	content: "\e10b";
+}
+.icon-kotaserangheart-2:before {
+	content: "\e10c";
+}
+.icon-kotaserangangry:before {
+	content: "\e10d";
+}
+.icon-kotaserangevil:before {
+	content: "\e10e";
+}
+.icon-kotaserangshocked:before {
+	content: "\e10f";
+}
+.icon-kotaserangconfused:before {
+	content: "\e110";
+}
+.icon-kotaserangneutral:before {
+	content: "\e111";
+}
+.icon-kotaserangwondering:before {
+	content: "\e112";
+}
+.icon-kotaserangomega:before {
+	content: "\e113";
+}
+.icon-kotaserangsigma:before {
+	content: "\e114";
+}
+.icon-kotaserangvimeo:before {
+	content: "\e115";
+}
+.icon-kotaserangvimeo2:before {
+	content: "\e116";
+}
+.icon-kotaserangpicassa:before {
+	content: "\e117";
+}
+.icon-kotaserangpicassa-2:before {
+	content: "\e118";
+}
+.icon-kotaserangdribbble:before {
+	content: "\e119";
+}
+.icon-kotaserangdribbble-2:before {
+	content: "\e11a";
+}
+.icon-kotaserangblogger:before {
+	content: "\e11b";
+}
+.icon-kotaserangblogger-2:before {
+	content: "\e11c";
+}
+.icon-kotaserangyahoo:before {
+	content: "\e11d";
+}
+.icon-kotaserangandroid:before {
+	content: "\e11e";
+}
+.icon-kotaserangwindows:before {
+	content: "\e11f";
+}
+.icon-kotaserangwindows8:before {
+	content: "\e120";
+}
+.icon-kotaseranglinkedin:before {
+	content: "\e121";
+}
+.icon-kotaserangdelicious:before {
+	content: "\e122";
+}
+.icon-kotaserangstumbleupon:before {
+	content: "\e123";
+}
+.icon-kotaserangstumbleupon-2:before {
+	content: "\e124";
+}
+.icon-kotaserangpencil:before {
+	content: "\e125";
+}
+.icon-kotaserangdribbble-3:before {
+	content: "\e126";
+}
+.icon-kotaserangstumbleupon-3:before {
+	content: "\f40c";
+}
+.icon-kotaserangbreakable:before {
+	content: "\f41c";
+}
+.icon-kotaserangbatman:before {
+	content: "\f348";
+}
+.icon-kotaserangironman:before {
+	content: "\f349";
+}
+.icon-kotaserangdarthvader:before {
+	content: "\f34a";
+}
+.icon-kotaserangspiderman:before {
+	content: "\f347";
+}
+.icon-kotaserangspider:before {
+	content: "\f346";
+}
+.icon-kotaserangpunisher:before {
+	content: "\f343";
+}
+.icon-kotaserangspawn:before {
+	content: "\f344";
+}
+.icon-kotaserangspaceinvaders:before {
+	content: "\f352";
+}
+.icon-kotaserangpokemon:before {
+	content: "\f354";
+}
+.icon-kotaserangrobocop:before {
+	content: "\f357";
+}
+.icon-kotaserangjason:before {
+	content: "\f38c";
+}
+.icon-kotaserangvalue:before {
+	content: "\f018";
+}
+.icon-kotaserangphp:before {
+	content: "\f09c";
+}
+.icon-kotaserangfourohfour:before {
+	content: "\f09d";
+}
+.icon-kotaserangcplusplus:before {
+	content: "\f0b1";
+}
+.icon-kotaserangcsharp:before {
+	content: "\f0b2";
+}
+.icon-kotaserangsquarebrackets:before {
+	content: "\f0b3";
+}
+.icon-kotaserangbraces:before {
+	content: "\f0b4";
+}
+.icon-kotaserangchevrons:before {
+	content: "\f0b5";
+}
+.icon-kotaserangphotoshop:before {
+	content: "\f1cd";
+}
+.icon-kotaserangillustrator:before {
+	content: "\f1ce";
+}
+.icon-kotaserangflash:before {
+	content: "\f1cf";
+}
+.icon-kotaserangdreamweaver:before {
+	content: "\f1d0";
+}
+.icon-kotaserangcreativecommons:before {
+	content: "\f1fc";
+}
+.icon-kotaserangairplane:before {
+	content: "\f23e";
+}
+.icon-kotaserangshipping:before {
+	content: "\f23f";
+}
+.icon-kotaserangbus-2:before {
+	content: "\f241";
+}
+.icon-kotaserangfreeway:before {
+	content: "\f24a";
+}
+.icon-kotaserangroad:before {
+	content: "\f249";
+}
+.icon-kotaserangforklift:before {
+	content: "\f29b";
+}
+.icon-kotaserangpodium:before {
+	content: "\f2d6";
+}
+.icon-kotaserangmedalgold:before {
+	content: "\f2e6";
+}
+.icon-kotaserangmedalsilver:before {
+	content: "\f2e7";
+}
+.icon-kotaserangmedalbronze:before {
+	content: "\f2e8";
+}
+.icon-kotaserangsum:before {
+	content: "\f33b";
+}
+.icon-kotaserangroot:before {
+	content: "\f33c";
+}
+.icon-kotaserangdollar-2:before {
+	content: "\24";
+}
+.icon-kotaserangpercent:before {
+	content: "\25";
+}
+.icon-kotaserangasterisk:before {
+	content: "\2a";
+}
+.icon-kotaserangplus:before {
+	content: "\2b";
+}
+.icon-kotaserangcopyright:before {
+	content: "\a9";
+}
+.icon-kotaserangsettings3:before {
+	content: "\f307";
+}
+.icon-kotaserangchat-2:before {
+	content: "\f162";
+}
+.icon-kotaserangtumblr-3:before {
+	content: "\f164";
+}
+.icon-kotaseranggoogleplus:before {
+	content: "\f165";
+}
+.icon-kotaseranglinkedin-2:before {
+	content: "\f166";
+}
+.icon-kotaserangblogger-3:before {
+	content: "\f167";
+}
+.icon-kotaserangvimeo-2:before {
+	content: "\f168";
+}
+.icon-kotaserangpath:before {
+	content: "\f169";
+}
+.icon-kotaserangtwitter-4:before {
+	content: "\f16a";
+}
+.icon-kotaserangyahoo-2:before {
+	content: "\f151";
+}
+.icon-kotaserangdelicious-2:before {
+	content: "\f152";
+}
+.icon-kotaserangfacebook2:before {
+	content: "\f14b";
+}
+.icon-kotaserangtethering:before {
+	content: "\f0f1";
+}
+.icon-kotaserangrawaccesslogs:before {
+	content: "\f0c1";
+}
+.icon-kotaserangdieone:before {
+	content: "\f3f7";
+}
+.icon-kotaserangdietwo:before {
+	content: "\f3f8";
+}
+.icon-kotaserangdiethree:before {
+	content: "\f3f9";
+}
+.icon-kotaserangdiefour:before {
+	content: "\f3fa";
+}
+.icon-kotaserangdiefive:before {
+	content: "\f3fb";
+}
+.icon-kotaserangdiesix:before {
+	content: "\f3fc";
+}
+.icon-kotaseranglighthouse:before {
+	content: "\f3e6";
+}
+.icon-kotaserangdiode:before {
+	content: "\f3e7";
+}
+.icon-kotaserangcapacitator:before {
+	content: "\f3e8";
+}
+.icon-kotaserangdcsource:before {
+	content: "\f3e9";
+}
+.icon-kotaserangacsource:before {
+	content: "\f3ea";
+}
+.icon-kotaserangresistor:before {
+	content: "\f3eb";
+}
+.icon-kotaserangsoup:before {
+	content: "\f3d1";
+}
+.icon-kotaserangfoodtray:before {
+	content: "\f3d0";
+}
+.icon-kotaserangangrybirds:before {
+	content: "\f3c1";
+}
+.icon-kotaserangvisa:before {
+	content: "\f3c2";
+}
+.icon-kotaserangvendetta:before {
+	content: "\f3c5";
+}
+.icon-kotaserangisland:before {
+	content: "\f392";
+}
+.icon-kotaserangapple:before {
+	content: "\f34e";
+}
+.icon-kotaserangfoursquare:before {
+	content: "\f42a";
+}
+.icon-kotaserangroute:before {
+	content: "\f402";
+}
+.icon-kotaserangspeed:before {
+	content: "\f40b";
+}
+.icon-kotaserangsharethree:before {
+	content: "\f414";
+}
+.icon-kotaserangcaptainamerica:before {
+	content: "\f341";
+}
+.icon-kotaserangsuperman:before {
+	content: "\f33f";
+}
+.icon-kotaserangfishbone:before {
+	content: "\f42b";
+}
+.icon-kotaserangfirefox-2:before {
+	content: "\f420";
+}
+.icon-kotaserangintersection:before {
+	content: "\2229";
+}
+.icon-kotaserangtie-2:before {
+	content: "\2040";
+}
+.icon-kotaserangminus-4:before {
+	content: "\2212";
+}
+.icon-kotaserangmultiply:before {
+	content: "\d7";
+}
+.icon-kotaserangdivide:before {
+	content: "\f7";
+}
+.icon-kotaserangblackberry:before {
+	content: "\f421";
+}
+.icon-kotaserangaperture:before {
+	content: "\f356";
+}
+.icon-kotaserangrestaurantmenu:before {
+	content: "\f362";
+}
+.icon-kotaserangchocolate:before {
+	content: "\f367";
+}
+.icon-kotaserangbirthday:before {
+	content: "\f36b";
+}
+.icon-kotaserangraceflag:before {
+	content: "\f38e";
+}
+.icon-kotaserangaries:before {
+	content: "\f3aa";
+}
+.icon-kotaserangtaurus:before {
+	content: "\f3ab";
+}
+.icon-kotaseranggemini:before {
+	content: "\f3ac";
+}
+.icon-kotaserangcancer:before {
+	content: "\f3ad";
+}
+.icon-kotaserangleo:before {
+	content: "\f3ae";
+}
+.icon-kotaserangvirgo:before {
+	content: "\f3af";
+}
+.icon-kotaseranglibra:before {
+	content: "\f3b0";
+}
+.icon-kotaserangscorpio:before {
+	content: "\f3b1";
+}
+.icon-kotaserangsagitarius:before {
+	content: "\f3b2";
+}
+.icon-kotaserangcapricorn:before {
+	content: "\f3b3";
+}
+.icon-kotaserangaquarius:before {
+	content: "\f3b4";
+}
+.icon-kotaserangpisces:before {
+	content: "\f3b5";
+}
+.icon-kotaserangparentheses:before {
+	content: "\f3c4";
+}
+.icon-kotaseranghelicopter:before {
+	content: "\f3e4";
+}
+.icon-kotaseranghtml:before {
+	content: "\f068";
+}
+.icon-kotaserangwordpress-3:before {
+	content: "\f074";
+}
+.icon-kotaseranggithub:before {
+	content: "\f081";
+}
+.icon-kotaserangandroid-2:before {
+	content: "\f12a";
+}
+.icon-kotaserangcomment:before {
+	content: "\f12c";
+}
+.icon-kotaserangfacebook-4:before {
+	content: "\f140";
+}
+.icon-kotaserangyoutube-3:before {
+	content: "\f142";
+}
+.icon-kotaseranginstagram-2:before {
+	content: "\f14a";
+}
+.icon-kotaserangreddit-2:before {
+	content: "\f154";
+}
+.icon-kotaserangmyspace:before {
+	content: "\f153";
+}
+.icon-kotaseranggmail:before {
+	content: "\f150";
+}
+.icon-kotaserangchrome-2:before {
+	content: "\f14e";
+}
+.icon-kotaserangrss:before {
+	content: "\f17b";
+}
+.icon-kotaserangevernote:before {
+	content: "\f17c";
+}
+.icon-kotaserangplay2:before {
+	content: "\f17e";
+}
+.icon-kotaserangmusic-2:before {
+	content: "\f181";
+}
+.icon-kotaserangvoice:before {
+	content: "\f18c";
+}
+.icon-kotaserangmusic2:before {
+	content: "\f18d";
+}
+.icon-kotaserangplace2:before {
+	content: "\f224";
+}
+.icon-kotaserangqrcode:before {
+	content: "\f275";
+}
+.icon-kotaserangpolice:before {
+	content: "\f2aa";
+}
