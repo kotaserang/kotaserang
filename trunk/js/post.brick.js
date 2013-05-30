@@ -1,7 +1,173 @@
-/*!
+/*
  * Galleria V2 - JQuery Masonry Widget for Blogger JSON by Taufik Nurrohman
  * URL's: https://plus.google.com/108949996304093815163/about
- *        http://www.dte.web.id/2012/07/rilis-galleria-v2-widget-masonry-untuk.html
+ *		http://hompimpaalaihumgambreng.blogspot.com/2012/07/rilis-galleria-v2-widget-masonry-untuk.html
  * Licence: http://creativecommons.org/licenses/by-nc-sa/3.0/
  */
-(function(a){if("onhashchange" in a){if(a.addEventListener){a.addHashChange=function(d,e){a.addEventListener("hashchange",d,e)};a.removeHashChange=function(d){a.removeEventListener("hashchange",d)};return}else{if(a.attachEvent){a.addHashChange=function(d){a.attachEvent("onhashchange",d)};a.removeHashChange=function(d){a.detachEvent("onhashchange",d)};return}}}var c=[],b=location.href;a.addHashChange=function(d,e){if(typeof d==="function"){c[e?"unshift":"push"](d)}};a.removeHashChange=function(e){for(var d=c.length-1;d>=0;d--){if(c[d]===e){c.splice(d,1)}}};setInterval(function(){var d=location.href;if(b!==d){b=d;for(var e=0;e<c.length;e++){c[e].call(a,{type:"hashchange",newURL:d,oldURL:b})}}},100)})(window);(function(b,a,c){if(typeof($jm_container)!="undefined"){$jm_container.html("Maintenance...")}b.fn.bloggerMasonry=function(f){f=b.extend({viewMode:"summary",homePage:"http://latitudu.blogspot.com",numPosts:10,numChars:270,showThumbnails:true,squareImage:false,newTabLink:false,columnWidth:200,subHeaderText:["Diposting oleh ","<br>pada "],monthNames:["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"],commentLabel:"&nbsp;",navText:{prev:"Sebelumnya",next:"Berikutnya",disabled:"&times;",data:["Halaman "," dari "]},postCategory:null,fallbackThumb:"http://hompimpa.googlecode.com/svn/trunk/Blogger-Masonry-Widget/img/meee.png",loadingText:"Loading...",loadedText:"Loaded.",infiniteScroll:false,bottomTolerance:30,masonryConfig:{itemSelector:".json_post",fadeSpeed:400,resizeSpeed:1000,isAnimated:false,animateWithTransition:true,animationOptions:{queue:false,duration:1000,easing:null},isFitWidth:true,gutterWidth:0,isRTL:false}},f);var n=this,i=null,k=false,j=0,e=f.masonryConfig,p=a.location.hash&&/\!page\=[0-9]+/.test(a.location.hash)?a.location.hash.replace("#",""):"!page=1",d=p?parseInt(p.split("page=")[1],10)-1:0,g=p?parseInt(p.split("page=")[1],10)+1:2;n.masonry({itemSelector:e.itemSelector,isAnimated:e.isAnimated,animationOptions:e.animationOptions,isFitWidth:e.isFitWidth,gutterWidth:e.gutterWidth,isRTL:e.isRTL}).html('<span id="json_loading">'+f.loadingText+"</span>").after('<div id="dte-masonry-nav"><a id="json_prev-nav">'+f.navText.prev+'</a><span id="json_total-posts">'+f.navText.data+'</span><a id="json_next-nav">'+f.navText.next+"</a></div>");var m={root:b("#dte-masonry-nav"),prev:b("#json_prev-nav"),next:b("#json_next-nav"),data:b("#json_total-posts")},h=b("#json_loading"),l=function(o){var r=0,q=0;h.removeClass("loaded").html(f.loadingText).stop().animate({top:0},e.fadeSpeed*2);m.root.css("visibility","hidden");i=b.get(f.homePage.replace(/\/$/,"")+"/feeds/posts/summary"+(f.postCategory===null?"":"/-/"+f.postCategory.replace(/\, ?/g,"/"))+"?alt=json-in-script&orderby=published&max-results="+f.numPosts+"&start-index="+(o==1?o:(f.numPosts*(o-1))+1),{},function(N){if("entry" in N.feed){var t=N.feed.entry,O=parseInt(N.feed.openSearch$totalResults.$t,10),y,s,J,M,z,u,E=[],v="";for(var I=0,K=t.length;I<K;I++){if(I==t.length){break}y=t[I].title.$t;s=t[I].published.$t.substring(0,10),J=t[I].author[0].name.$t,M=("media$thumbnail" in t[I])?t[I].media$thumbnail.url:f.fallbackThumb;z=("summary" in t[I])?t[I].summary.$t:"";var A=s.substring(0,4),G=s.substring(5,7),L=s.substring(8,10);for(var H=0,D=t[I].link.length;H<D;H++){u=(t[I].link[H].rel=="alternate")?t[I].link[H].href:"#nope"}for(var F=0,w=t[I].link.length;F<w;F++){if(t[I].link[F].rel=="replies"&&t[I].link[F].type=="text/html"){E=t[I].link[F].title.split(" ");break}}f.commentLabel=(E!==[]&&f.commentLabel=="&nbsp;")?E[1]:f.commentLabel;M=(!f.squareImage)?M.replace(/\/s[0-9]+\-c\//,"/s"+f.columnWidth+"/"):M.replace(/\/s[0-9]+\-c\//,"/s"+f.columnWidth+"-c/");z=z.replace(/<br ?\/?>/g," ").replace(/<.*?>/g,"");z=(z.length>f.numChars)?z.substring(0,f.numChars)+"&hellip;":z;var x=(f.newTabLink)?' target="_blank"':"";if(f.viewMode=="summary"){v+='<div style="width:'+f.columnWidth+'px;" class="json_post json_summary-mode">';v+='<h3 class="json_post-title"><a href="'+u+'"'+x+">"+y+"</a></h3>";v+='<span class="json_sub-header">';v+='<span class="json_author">'+f.subHeaderText[0]+J+"</span> ";v+=f.subHeaderText[1]+'<abbr class="json_post-date">'+L+" "+f.monthNames[parseInt(G,10)-1]+" "+A+"</abbr>";v+="</span>";v+='<div class="json_post-body">';v+=(f.showThumbnails)?'<a class="json_img-container loading" href="'+u+'"'+x+'><img src="'+M+'" alt="'+y+'"/></a>':v;v+=(f.numChars>0)?"<p>"+z+"</p>":v;v+="</div>";v+='<span class="json_post-footer clearfix">';v+='<span class="json_comment">'+E[0]+" "+f.commentLabel+"</span>";v+='<a class="json_more" href="'+u+'"'+x+">+</span>";v+="</span>";v+="</div>"}else{v+='<figure class="json_post json_thumbnail-mode loading">';v+='<a href="'+u+'"'+x+'><img src="'+M+'" alt="'+y+'" style="width:'+f.columnWidth+'px;"/></a>';v+="<figcaption>";v+='<strong class="json_caption"><a href="'+u+'"'+x+">"+y+"</a></strong>";v+='<span class="json_post-date">'+L+" "+f.monthNames[parseInt(G,10)-1]+" "+A+"</span> ";v+='<span class="json_comment">'+E[0]+" "+f.commentLabel+"</span>";v+="</figcaption>";v+="</figure>"}r++}if(!f.infiniteScroll){n.removeClass("css-transition").find(".json_post").remove()}j=f.infiniteScroll?b(a).scrollTop():0;n.append(v).masonry("reload").addClass(!e.isAnimated&&e.animateWithTransition?"css-transition":"");b(a).scrollTop(j);var B=function(){k=false;if(q==f.numPosts||(r<f.numPosts&&q==r)){h.addClass("loaded").html(f.loadedText).stop().delay(700).animate({top:-100},e.fadeSpeed*2)}};n.find(".loading img").css("opacity",0).each(function(){if(f.viewMode=="summary"){b(this).one("load",function(){b(this).animate({opacity:1},e.fadeSpeed,function(){n.masonry("reload")}).parent().removeClass("loading");q++;B()})}else{b(this).on("load",function(){var P=b(this).outerWidth(),Q=b(this).outerHeight();b(this).closest(".json_post").removeClass("loading").animate({width:P,height:Q},e.resizeSpeed,function(){b(this).find("img").animate({opacity:1},e.fadeSpeed,function(){n.masonry("reload")})}).hover(function(){b("figcaption",this).slideDown()},function(){b("figcaption",this).slideUp()});q++;B()})}});var C=f.navText.data;m.prev.html(f.navText.disabled).removeAttr("href");m.next.html(f.navText.next).attr("href","#!page="+g);m.data.html(C[0]+(d+1)+C[1]+Math.round(O/f.numPosts));if(a.location.hash&&parseInt(a.location.hash.split("page=")[1],10)>1){m.prev.html(f.navText.prev).attr("href","#!page="+d)}k=false}else{if(!f.infiniteScroll){n.find(".json_post").remove()}h.addClass("loaded").html(f.loadedText).stop().delay(700).animate({top:-100},e.fadeSpeed*2);m.next.html(f.navText.disabled).removeAttr("href");k=false}m.root.css("visibility","visible").find("a").on("click",function(){if(this.href){a.location.hash=this.hash}return false})},"jsonp")};a.addHashChange(function(q){var o=parseInt(a.location.hash.split("page=")[1],10)||1;if(f.infiniteScroll&&o<g){n.find(".json_post").remove();b(a).scrollTop(0)}d=o-1;g=o+1;i.abort();l(o)});l(p?parseInt(p.split("page=")[1],10):1);if(f.infiniteScroll){b(a).on("scroll resize",function(){if(!k&&b(this).scrollTop()>=(n.outerHeight()-b(this).height()-f.bottomTolerance)){m.next.trigger("click");k=true}})}}})(jQuery,window,document);
+
+function postBrick(json) {
+
+	var entry = json.feed.entry, // Get the post contents...
+		skeleton = "";
+
+	// Box animations ? Use JavasScript or CSS Transition?
+	// More => http://masonry.desandro.com/docs/animating.html#css_transitions
+	if (jm_animateWithTransition && jm_isAnimated !== true) {
+		$jm_container.addClass('css-transition');
+	}
+
+	for (var i = 0; i < numposts; i++) {
+		if (i == entry.length) break;
+		var postTitle = entry[i].title.$t, // Get the post titles...
+			postAuthor = entry[i].author[0].name.$t, // Get the post author
+			postDate = entry[i].published.$t.substring(0,10), // Post date... e.g: "2012-02-07T12:56:00.000+07:00".substring(0,10) => 2012-02-07
+			postContent = ("summary" in entry[i]) ? entry[i].summary.$t : '', // Get the post content
+			postImage = ("media$thumbnail" in entry[i]) ? entry[i].media$thumbnail.url : jm_fallbackThumb, // Get the pos thumbnail
+			postUrl, commentNum, commentLabel;
+
+		var dy = postDate.substring(0,4), // Take 4 characters from the "postDate" beginning, it means the year (2012)
+			dm = postDate.substring(5,7), // Take 2 character 5 step from "postDate" beginning, it mean the month (02)
+			dd = postDate.substring(8,10); // Take 2 character 8 step from "postDate" beginning. it means the day (07)
+
+		// Get the post URL
+		for (var j = 0, elen = entry[i].link.length; j < elen; j++) {
+			postUrl = (entry[i].link[j].rel == 'alternate') ? entry[i].link[j].href : '#nope';
+		}
+
+		for (var k = 0, clen = entry[i].link.length; k < clen; k++) {
+			// Grab the "10 Comments" --for the example--
+			if (entry[i].link[k].rel == 'replies' && entry[i].link[k].type == 'text/html') {
+				commentNum = entry[i].link[k].title.split(" ")[0]; // Get the comment count => "10"
+				if (jm_commentLabel === "") {
+					commentLabel = entry[i].link[k].title.split(" ")[1]; // Get the comment label => "Comments"
+				} else {
+					commentLabel = jm_commentLabel; // User defined
+				}
+				break;
+			} else {
+				commentNum = "";
+				commentLabel = "&nbsp;";
+			}
+		}
+
+		// About Picasa compression method, using image path such as "s1600/image.jpg", "s400/image.jpg", "s72-c/image.jpg", ...
+		// Now you try to reduce the image resolution by replacing the "s[0-9]+" path with your own resolutions
+		// Get the image URL from JSON (a mini thumbnail version => "s72-c/image.jpg")
+		postImage = (!squareImage) ? postImage.replace(/\/s[0-9]+\-c\//, "\/s"+jm_columnWidth+"\/") : postImage.replace(/\/s[0-9]+\-c\//, "\/s"+jm_columnWidth+"-c\/");
+
+		// Strip all HTML tags
+		postContent = postContent.replace(/<br ?\/?>/g, " ").replace(/<\S[^>]*>/g, "");
+		postContent = (postContent.length > numchars) ? postContent.substring(0, numchars) + '&hellip;' : postContent; // Reduce post summary length
+
+		// Open link in new window?
+		var tg = (newTabLink) ? ' target=\"_blank\"' : '';
+
+		// Now grab the skeleton! In the Java language means "balung"
+		if (viewMode == "summary") {
+			skeleton += '<div style="width:' + jm_columnWidth + 'px;" class="json_post json_summary-mode">';
+			skeleton += '<h3 class="json_post-title"><a href="' + postUrl + '"' + tg + '>' + postTitle + '</a></h3>';
+			skeleton += '<span class="json_sub-header">';
+			skeleton += '<span class="json_author">' + jm_subHeaderText[0] + ' ' + postAuthor + '</span> ';
+			skeleton += '<br>' + jm_subHeaderText[1] + ' <abbr class="json_post-date">' + dd + ' ' + jm_monthNames[(Number(dm)-1)] + ' ' + dy + '</abbr>';
+			skeleton += '</span>';
+			skeleton += '<div class="json_post-body">';
+			skeleton += (showThumbnails) ? '<a class="json_img-container loading" href="' + postUrl + '"' + tg + '><img src="' + postImage + '" alt="' + postTitle + '"/></a>' : skeleton;
+			skeleton += (numchars > 0) ? '<p>' + postContent + '</p>' : skeleton;
+			skeleton += '</div>';
+			skeleton += '<span class="json_post-footer clearfix">';
+			skeleton += '<span class="json_comment">' + commentNum + ' ' + commentLabel + '</span>';
+			skeleton += '<a class="json_more" href="' + postUrl + '"' + tg + '>+</span>';
+			skeleton += '</span>';
+			skeleton += '</div>';
+		} else if (viewMode == "thumbnail") {
+			skeleton += '<figure class="json_post json_thumbnail-mode loading">';
+			skeleton += '<a href="' + postUrl + '"' + tg + '><img src="' + postImage + '" alt="' + postTitle + '" style="width:' + jm_columnWidth + 'px;"/></a>';
+			skeleton += '<figcaption>';
+			skeleton += '<strong class="json_caption"><a href="' + postUrl + '"' + tg + '>' + postTitle + '</a></strong>';
+			skeleton += '<span class="json_post-date">' + dd + ' ' + jm_monthNames[(Number(dm)-1)] + ' ' + dy + '</span> ';
+			skeleton += '<span class="json_comment">' + commentNum + ' ' + commentLabel + '</span>';
+			skeleton += '</figcaption>';
+			skeleton += '</figure>';
+		} else {
+			skeleton += '<div class="json_alert">Hmmm.... Nothing.</div>';
+		}
+	}
+
+	// Append the generated content...
+	$jm_container.append(skeleton);
+
+	// I'm writing "Page # of #"
+	var tp = $jm_totalPosts.html().split('#'),
+		postTotal = parseInt(json.feed.openSearch$totalResults.$t,10); // Get total items...
+	if(window.location.search) {
+		$jm_totalPosts.html(
+			tp[0] + window.location.search.substr(6) + tp[1] + Math.round((postTotal/numposts)+1)
+		);
+	} else {
+		$jm_totalPosts.html(
+			tp[0] + "1" + tp[1] + Math.round((postTotal/numposts)+1)
+		);
+	}
+
+	// Show the navigation
+	$jm_nav.show();
+	// Set the navigation location.search as "?page=1", "?page=2", "?page=3", blablablah...
+	$jm_prev.attr('href', "?page=" + (parseInt(window.location.search.substr(6),10)-1));
+	$jm_next.attr('href', "?page=" + (parseInt(window.location.search.substr(6),10)+1));
+	if (!window.location.search || window.location.search == "?page=1") {
+		$jm_prev.removeAttr('href').html('&#215;');
+		$jm_next.attr('href', '?page=2');
+	}
+	if (parseInt(window.location.search.substr(6),10) >= Math.round((postTotal/numposts)+1)) {
+		$jm_next.removeAttr('href').html('&#215;');
+	}
+
+	// Run the masonry plugin!
+	$jm_container.masonry({
+		itemSelector:$jm_itemSelector,
+		isAnimated:jm_isAnimated,
+		animationOptions:jm_animationOptions,
+		isFitWidth:jm_isFitWidth,
+		gutterWidth:jm_gutterWidth,
+		isRTL:jm_isRTL
+	}).find('img').css('opacity',0).each(function() {
+		if (viewMode == "summary") {
+			$(this).one("load", function() {
+				$(this).animate({opacity:1}, jm_fadeSpeed, function() {
+					$jm_container.masonry("reload");
+				}).parent().removeClass('loading');
+			});
+		}
+		$(this).on("load", function() {
+			var i_w = $(this).outerWidth(),
+				i_h = $(this).outerHeight();
+			$(this).parents('.json_post.json_thumbnail-mode').removeClass('loading').animate({
+				width:i_w,
+				height:i_h
+			}, jm_resizeSpeed, function() {
+				$(this).find('img').animate({opacity:1}, jm_fadeSpeed, function() {
+					$jm_container.masonry("reload");
+				});
+			}).hover(function() {
+				$(this).find('figcaption').slideDown();
+			}, function() {
+				$(this).find('figcaption').slideUp();
+			});
+		});
+	});
+	// The end. You die!
+
+}
+
+$(window).on("load", function() {
+	$('#json_loading').addClass('loaded').text(jm_loadedText).delay(700).fadeOut('fast');
+});
+
+var jm_currentPage = (window.location.search && window.location.search !== "?page=1") ? numposts*(parseInt(window.location.search.substr(6), 10)-1) : 1, // Navigation
+	specificLabel = (jm_postCategory !== null) ? "-/" + jm_postCategory : ""; // Sort posts by categories...
+(function() {
+	var s = document.createElement('script');
+		s.type = "text/javascript";
+		s.src = jm_homePage + "/feeds/posts/summary/" + specificLabel + "?alt=json-in-script&start-index=" + jm_currentPage + "&redirect=false&callback=postBrick";
+	document.getElementsByTagName('head')[0].appendChild(s);
+})();
