@@ -4,7 +4,7 @@ $(window).load(function(){
 (function($) {
     $.fn.toc = function(o, p) {
         p = $.extend({
-            title: "Table of Content"
+            title: "Daftar Isi Artikel:"
         }, p);
         this.prepend('<div id="toc-list"  style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><strong>' + p.title + '</strong><ol></ol></div>').children(o).each(function(i) {
             i = i + 1;
@@ -16,7 +16,7 @@ $(window).load(function(){
 
 $(function() {
     $('article').toc('h3', {
-        title: "Tabel Konten:"
+        title: "Daftar Isi Artikel:"
     });
 
     $('#toc-list a, a[href="#toc-list"]').on("click", function() {
